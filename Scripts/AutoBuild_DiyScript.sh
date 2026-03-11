@@ -139,12 +139,14 @@ EOF
 	;;
 	immortalwrt/immortalwrt*)
 		case "${TARGET_PROFILE}" in
-		x86_64)
-			sed -i -- 's:/bin/ash:'/bin/bash':g' ${BASE_FILES}/etc/passwd
-			case "${CONFIG_FILE}" in
 			x86_64)
-				AddPackage qosmate hudra0 qosmate main
-				AddPackage qosmate hudra0 luci-app-qosmate main
+				sed -i -- 's:/bin/ash:'/bin/bash':g' ${BASE_FILES}/etc/passwd
+				case "${CONFIG_FILE}" in
+				x86_64)
+					AddPackage qmodem FUjr QModem main
+
+					AddPackage qosmate hudra0 qosmate main
+					AddPackage qosmate hudra0 luci-app-qosmate main
 				
 				AddPackage bandix timsaya luci-app-bandix main
 				AddPackage bandix timsaya openwrt-bandix main
