@@ -40,6 +40,8 @@ AutoBuild-Actions 稳定版仓库地址: [AutoBuild-Actions-Template](https://gi
 
 2. 编辑`Configs`目录下的配置文件, 配置文件的命名一般为**TARGET_PROFILE**, 若配置文件不存在则需要在本地生成并上传
 
+   > 说明：当前 `Configs/x86_64` 与 `Configs/x86_64-AP` 均已包含 MT7922 无线支持所需配置。
+
 3. 编辑`.github/workflows/***.yml`文件, 修改`第 7 行 name:`, 填写一个便于识别的名称 `e.g. NEWIFI D2`
 
 4. 编辑`.github/workflows/***.yml`文件, 修改`第 32 行 CONFIG_FILE:`, 填写你添加到`Configs`目录下的配置名称
