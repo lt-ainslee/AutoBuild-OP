@@ -143,6 +143,7 @@ EOF
 				sed -i -- 's:/bin/ash:'/bin/bash':g' ${BASE_FILES}/etc/passwd
 				case "${CONFIG_FILE}" in
 				x86_64)
+					AddPackage other vernesong OpenClash dev
 					AddPackage qmodem FUjr QModem main
 
 					AddPackage qosmate hudra0 qosmate main
